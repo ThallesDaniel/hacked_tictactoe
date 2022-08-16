@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<html lang="pt-br">
+
+    <head>
+        <title> INICIANDO RAPTO DE DADOS </title>
+        <meta charset="utf-8">
+        <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+        <script type="application/javascript"></script>
+        <script type="text/javascript">
+    
+$(function() {
+    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+      function(json) {
+        alert("começando coleta de dados da máquina conectada....");
+
+       alert("o ip da sua máquina é:  ", json.ip);
+       alert(json.ip);
+
+       alert("coletando mais dados:");
+      }
+    );
+  });
+
+</script>
+        <style>
+      
+  #d{
+    background-color: black;
+    text-align: justify;
+
+  }
+
+        </style>
+
+	<body id="d">
+
+      
+    <video autoplay muted loop id="myVideo">
+      <source src="videos/lv_0_20220812140357.mp4" type="video/mp4">
+    </video>
+    
+    
+    <div class="content">
+      <p> Já vimos a verdade, e a verdade é o desconhecido.</br>
+        mas o descinhecido não pode sear a verdade</br>
+        a verdade é que o desconhecido só pode ser verdadeiro quando</br>
+        a verdade do desconhecido pode ser.</br>
+        e essa é a verdade.<br>
+        nós mudamos o mundo que conhecemos pela primeira vez...<br>
+        ..... desde a última vez
+      </p>
+    </div>
+    <audio src="aud/hackeado.mp3" controls autoplay  style="display:none ;"> 
+      </audio>
+    
+    </body>
+      <script>
+          setTimeout(function() {
+              window.location.href = "jogo.html";
+          }, 13000);
+      </script>
+  
+  
+  
+      </html>
